@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  /* Richer, warmer earthy palette */
+  --color-cream: #f0e6d2;       /* warm linen — was a touch too white */
+  --color-parchment: #e2d0b4;   /* deep warm parchment */
+  --color-sand: #c8b090;        /* golden sand */
+  --color-clay: #b85530;        /* terra cotta / burnt sienna */
+  --color-clay-light: #d07848;  /* warm peach-orange */
+  --color-earth: #2c1a08;       /* deep warm brown */
+  --color-bark: #8a6040;        /* medium warm brown */
+  --color-ash: #a08060;         /* warm gray-brown */
+  --color-sage: #6e8060;        /* olive green */
+  --color-sage-light: #a8b898;  /* muted olive */
+
+  --font-sans: var(--font-dm-sans);
+  --font-serif: var(--font-cormorant);
+}
+
+html {
+  background-color: #f0e6d2;
+  color: #2c1a08;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
