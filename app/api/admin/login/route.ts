@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
   const store = await cookies();
   store.set("oi-admin-token", process.env.ADMIN_PASSWORD, {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
+    secure: process.env.NEXT_PUBLIC_BASE_URL?.startsWith("https") ?? false,
     sameSite: "strict",
     maxAge: 60 * 60 * 24 * 30,
     path: "/",
